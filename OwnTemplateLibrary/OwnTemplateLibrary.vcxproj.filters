@@ -16,15 +16,30 @@
     <Filter Include="Source Files\include">
       <UniqueIdentifier>{fedaf27d-c2fa-425e-b1c4-6f830634b5b6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{fca41dfe-3529-4dc8-944f-87cdfa337a83}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linkedlist.h">
       <Filter>Source Files\include</Filter>
     </ClInclude>
+    <ClInclude Include="doublylinkedlist.h">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="linkedlist.cpp">
+    <ClCompile Include="doublylinkedlist.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedlist.cpp">
+      <Filter>Source Files\src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

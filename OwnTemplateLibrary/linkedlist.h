@@ -16,8 +16,8 @@ This library is all about singly linked list. Here you can find following functi
 
 #pragma once
 
-#ifndef _VECTOR_H
-#define _VECTOR_H
+#ifndef _LINKEDLIST_H
+#define _LINKEDLIST_H
 
 #include<iostream>
 
@@ -90,8 +90,9 @@ namespace own {
 				if (curr->next != nullptr) {
 					if (curr->data == data){
 						temp = curr->next;
-						delete head;
+						curr = nullptr;
 						head = temp;
+						delete curr;
 						return;
 					}
 					if (curr->next->data == data) {
@@ -147,5 +148,5 @@ namespace own {
 	};
 }
 
-#endif // !_VECTOR_H
+#endif // !_LINKEDLIST_H
 
