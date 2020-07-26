@@ -6,7 +6,7 @@
 
 /*
 This library is all about singly linked list. Here you can find following functions;
-	1. Insert a new node in array.
+	1. Insert a new node in linkedlist.
 	2. Search a node.
 	3. Insert a new node at random position.
 	4. Find the length of the linkedlist.

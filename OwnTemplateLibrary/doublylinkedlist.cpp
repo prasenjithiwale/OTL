@@ -11,4 +11,5 @@ void DLL() {
 	DLL::insert(head, 12);
 	DLL::insert(head, 13);
 	DLL::search(head);
+	std::cout << DLL::find(head, 12)->data;
 }
