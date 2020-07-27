@@ -49,7 +49,7 @@ namespace own {
 			}
 		}
 
-		static void search(Node* head) {
+		static void dll_print(Node* head) {
 			Node* curr = head;
 			while (curr) {
 				if (curr->next == nullptr && curr->prev == nullptr) {
@@ -64,6 +64,31 @@ namespace own {
 					else {
 						std::cout << "Prev not available" << std::endl;
 					}*/
+				}
+				curr = curr->next;
+			}
+		}
+
+		static void insert_at(Node* &head, int after, int data) {
+			Node* curr = head;
+			Node* newNode = new Node(data);
+			while (curr) {
+				if (head == nullptr) {
+					return;
+				}
+				else if (curr->data == after) {
+					if (curr->next != nullptr) {
+						newNode->prev = curr;
+						newNode->next = curr->next;
+						curr->next->prev = newNode;
+						curr->next = newNode;
+						return;
+					}
+					else if (curr->next == nullptr) {
+						curr->next = newNode;
+						newNode->prev = curr;
+						return;
+					}
 				}
 				curr = curr->next;
 			}
