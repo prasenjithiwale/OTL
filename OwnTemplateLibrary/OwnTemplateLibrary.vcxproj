@@ -151,11 +151,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="circularlinkedlist.cpp" />
     <ClCompile Include="doublylinkedlist.cpp" />
     <ClCompile Include="linkedlist.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="circularlinkedlist.h" />
     <ClInclude Include="doublylinkedlist.h" />
     <ClInclude Include="linkedlist.h" />
     <ClInclude Include="main.h" />

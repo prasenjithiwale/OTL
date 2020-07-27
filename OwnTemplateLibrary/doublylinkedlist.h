@@ -34,6 +34,8 @@ namespace own {
 
 	class DLL {
 	public:
+
+		//Insert a new Node in Doubly Linked List.
 		static void insert(Node* &head, int data) {
 			Node* newNode = new Node(data);
 			if (head == nullptr) {
@@ -49,6 +51,7 @@ namespace own {
 			}
 		}
 
+		//Print all nodes from doubly linked list.
 		static void dll_print(Node* head) {
 			Node* curr = head;
 			while (curr) {
@@ -69,6 +72,7 @@ namespace own {
 			}
 		}
 
+		//Insert a new node at any location in doubly linked list.
 		static void insert_at(Node* &head, int after, int data) {
 			Node* curr = head;
 			Node* newNode = new Node(data);
@@ -94,6 +98,7 @@ namespace own {
 			}
 		}
 
+		//Get length() function added to get length of the doubly linked list.
 		static int length(Node* head) {
 			int len = 0;
 			Node* curr = head;
@@ -104,6 +109,7 @@ namespace own {
 			return len;
 		}
 
+		//Find any data in doubly linked list if its available in there.
 		static Node* find(Node* head, int data) {
 			Node* curr = head;
 			while (head) {
@@ -115,6 +121,16 @@ namespace own {
 				}
 			}
 			return head;
+		}
+
+		//Update any node with a new value.
+		static Node* dll_update(Node* &head, int old, int new_data) {
+			//DLL_UPDATE here!
+		}
+
+		//Delete any node from doubly linked list.
+		static Node* dll_delete(Node* head, int data) {
+			//DLL_DELETE here!
 		}
 
 	};
