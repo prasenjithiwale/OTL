@@ -14,5 +14,7 @@ void DLL() {
 	DLL::insert_at(head, 12, 23);
 	std::cout << "After inserting 23 on a location" << std::endl;
 	DLL::dll_print(head);
-	std::cout << DLL::find(head, 12)->data;
+	std::cout << DLL::find(head, 12)->data << std::endl;
+
+	std::cout << "Length of Doubly Linked List: " << DLL::length(head) << std::endl;
 }

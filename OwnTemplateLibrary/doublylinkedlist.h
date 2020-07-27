@@ -94,6 +94,16 @@ namespace own {
 			}
 		}
 
+		static int length(Node* head) {
+			int len = 0;
+			Node* curr = head;
+			while (curr) {
+				len++;
+				curr = curr->next;
+			}
+			return len;
+		}
+
 		static Node* find(Node* head, int data) {
 			Node* curr = head;
 			while (head) {
