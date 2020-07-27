@@ -6,5 +6,6 @@ It's just a try to make my own data structure library.
 * Singly Linked List
 * Doubly Linked List
 * Circular Linked List
-
+* Stack (Using Linked List)
+* Queue (Using Linked List)
 ...
