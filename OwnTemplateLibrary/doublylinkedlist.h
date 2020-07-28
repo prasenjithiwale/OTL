@@ -129,10 +129,39 @@ namespace own {
 		}
 
 		//Delete any node from doubly linked list.
-		static Node* dll_delete(Node* head, int data) {
-			//DLL_DELETE here!
+		static void dll_delete(Node* head, int data) {
+			Node* curr = head;
+			while (curr != nullptr) {
+				if (curr->data == data){
+					if (curr->next == nullptr && curr->prev == nullptr) {
+						curr = nullptr;
+						delete curr;
+						return;
+					}
+					else if (curr->prev == nullptr && curr->next != nullptr) {		//Error here!
+						head = curr->next;
+						curr->next->prev = nullptr;
+						curr = nullptr;
+						delete curr;
+						return;
+					}
+					else if (curr->next == nullptr) {
+						curr->prev->next = nullptr;
+						curr->prev = nullptr;
+						delete curr;
+						return;
+					}
+					else {
+						Node* temp = curr->prev;
+						temp->next = curr->next;
+						curr->next->prev = temp;
+						curr = nullptr;
+						return;
+					}
+				}
+				curr = curr->next;
+			}
 		}
-
 	};
 }
 
