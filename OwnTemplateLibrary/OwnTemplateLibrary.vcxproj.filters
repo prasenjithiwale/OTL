@@ -33,6 +33,9 @@
     <ClInclude Include="circularlinkedlist.h">
       <Filter>Source Files\include</Filter>
     </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="doublylinkedlist.cpp">
@@ -45,6 +48,9 @@
       <Filter>Source Files\src</Filter>
     </ClCompile>
     <ClCompile Include="circularlinkedlist.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="stack.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
   </ItemGroup>

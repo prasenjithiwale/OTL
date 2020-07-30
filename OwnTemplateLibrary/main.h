@@ -6,6 +6,7 @@
 void LL();
 void DLL();
 void CLL();
+void STCK();
 
 #endif // !_MAIN_H
 
