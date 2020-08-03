@@ -27,19 +27,8 @@ namespace own {
 			}
 			else {
 				newNode->next = newNode;
-			}
-			head = newNode;
-			/*if (head == nullptr) {
 				head = newNode;
-				return;
 			}
-			while (head) {
-				if (curr->next == head) {
-					newNode->next = head;
-					curr->next = newNode;
-					return;
-				}
-			}*/
 		}
 		static void print(Node* &head) {
 			Node* curr = head;
