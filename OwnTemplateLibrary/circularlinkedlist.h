@@ -39,6 +39,27 @@ namespace own {
 				} while (curr != head);
 			}
 		}
+		static int length(Node* &head) {
+			int len = 0;
+			Node* curr = head;
+			do {
+				len += 1;
+				curr = curr->next;
+			} while (curr != head);
+
+			return len;
+		}
+
+		static Node* find(Node* &head, int data) {
+			Node* curr = head;
+			do {
+				if (curr->data == data)
+					return curr;
+				curr = curr->next;
+			} while (curr != head);
+
+			return new Node(-1);
+		}
 	};
 }
 
