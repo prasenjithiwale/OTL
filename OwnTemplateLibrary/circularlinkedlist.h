@@ -18,10 +18,19 @@ namespace own {
 		static void insert(Node* &head, int data) {
 			Node* curr = head;
 			Node* newNode = new Node(data);
-			if (head == nullptr) {
-				curr = newNode;
-				curr->next = head;
-				std::cout << curr->data;
+			newNode->next = head;
+			if (head != nullptr) {
+				while (curr->next != head) {
+					curr = curr->next;
+				}
+				curr->next = newNode;
+			}
+			else {
+				newNode->next = newNode;
+			}
+			head = newNode;
+			/*if (head == nullptr) {
+				head = newNode;
 				return;
 			}
 			while (head) {
@@ -30,14 +39,16 @@ namespace own {
 					curr->next = newNode;
 					return;
 				}
-			}
+			}*/
 		}
 		static void print(Node* &head) {
 			Node* curr = head;
-			do{
-				std::cout << curr->data << std::endl;
-				curr = curr->next;
-			} while (curr->next != head);
+			if(head != nullptr){
+				do {
+					std::cout << curr->data << std::endl;
+					curr = curr->next;
+				} while (curr != head);
+			}
 		}
 	};
 }
