@@ -125,7 +125,21 @@ namespace own {
 
 		//Update any node with a new value.
 		static Node* dll_update(Node* &head, int old, int new_data) {
-			//DLL_UPDATE here!
+			Node* curr = head;
+			if (head != nullptr && head->next == nullptr) {
+				if (head->data == old){
+					head->data = new_data;
+					return head;
+				}
+			}
+			while (curr != nullptr){
+				if (curr->data == old){
+					curr->data = new_data;
+					return curr;
+				}
+				curr = curr->next;
+			}
+			return new Node(-1);
 		}
 
 		//Delete any node from doubly linked list.
@@ -138,7 +152,7 @@ namespace own {
 						delete curr;
 						return;
 					}
-					else if (curr->prev == nullptr && curr->next != nullptr) {		//Error here!
+					else if (curr->prev == nullptr && curr->next != nullptr) {		//Error here! //Head is not deleting
 						head = curr->next;
 						curr->next->prev = nullptr;
 						curr = nullptr;

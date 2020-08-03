@@ -7,7 +7,7 @@
 
 int main()
 {
-	CLL();
+	DLL();
 	return 0;
 }
 
