@@ -7,7 +7,7 @@
 
 int main()
 {
-	CLL();
+	QUE();
 	return 0;
 }
 

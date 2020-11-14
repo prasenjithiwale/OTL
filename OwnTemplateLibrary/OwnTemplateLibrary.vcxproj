@@ -155,6 +155,7 @@
     <ClCompile Include="doublylinkedlist.cpp" />
     <ClCompile Include="linkedlist.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="queue.cpp" />
     <ClCompile Include="stack.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -162,6 +163,7 @@
     <ClInclude Include="doublylinkedlist.h" />
     <ClInclude Include="linkedlist.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="queue.h" />
     <ClInclude Include="stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

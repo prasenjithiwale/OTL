@@ -7,6 +7,7 @@ void LL();
 void DLL();
 void CLL();
 void STCK();
+void QUE();
 
 #endif // !_MAIN_H
 
