@@ -39,6 +39,9 @@
     <ClInclude Include="queue.h">
       <Filter>Source Files\include</Filter>
     </ClInclude>
+    <ClInclude Include="algo.h">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="doublylinkedlist.cpp">

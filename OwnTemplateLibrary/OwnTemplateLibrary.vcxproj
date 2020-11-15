@@ -159,6 +159,7 @@
     <ClCompile Include="stack.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="algo.h" />
     <ClInclude Include="circularlinkedlist.h" />
     <ClInclude Include="doublylinkedlist.h" />
     <ClInclude Include="linkedlist.h" />
