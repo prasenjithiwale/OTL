@@ -1,3 +1,20 @@
+//Author: Prasenjit Hiwale
+//Date: 11/15/2020
+
+//CRUD Queue.
+
+
+/*
+This library is all about Queue. Here you can find following functions;
+	1. Push on to the queue.
+	2. Search any node if available in queue.
+	3. Pop item from queue.
+	4. Check if empty.
+	5. Push unique item.
+	6. Get front ietm.
+	7. Get rear item.
+*/
+
 #pragma once
 #ifndef _QUEUE_H
 #define _QUEUE_H
@@ -49,7 +66,7 @@ namespace own {
 	bool queue::isAvail(Node* &head, int data) {
 		Node* temp = head;
 
-		while (temp->next != nullptr) {
+		while (temp != nullptr) {
 			if (temp->data == data)
 				return true;
 			temp = temp->next;
@@ -75,12 +92,13 @@ namespace own {
 		if (isEmpty(head)) {
 			return -1;
 		}
-		curr = curr->next;
-		while (curr->next != nullptr) {
+		curr = curr;
+		while (curr->next->next != nullptr) {
 			curr = curr->next;
 		}
-		int rvalue = curr->data;
-		delete curr;
+		int rvalue = curr->next->data;
+		delete curr->next;
+		curr->next = nullptr;
 		return rvalue;
 	}
 
