@@ -7,7 +7,7 @@
 
 int main()
 {
-	QUE();
+	check();
 	return 0;
 }
 

@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Algo.cpp" />
     <ClCompile Include="circularlinkedlist.cpp" />
     <ClCompile Include="doublylinkedlist.cpp" />
     <ClCompile Include="linkedlist.cpp" />

@@ -8,6 +8,7 @@ void DLL();
 void CLL();
 void STCK();
 void QUE();
+void check();
 
 #endif // !_MAIN_H
 
