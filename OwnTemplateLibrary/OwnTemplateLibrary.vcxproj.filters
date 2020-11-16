@@ -39,7 +39,7 @@
     <ClInclude Include="queue.h">
       <Filter>Source Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="algo.h">
+    <ClInclude Include="sort.h">
       <Filter>Source Files\include</Filter>
     </ClInclude>
   </ItemGroup>
@@ -62,7 +62,7 @@
     <ClCompile Include="queue.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
-    <ClCompile Include="Algo.cpp">
+    <ClCompile Include="Sort.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
   </ItemGroup>

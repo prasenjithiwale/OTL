@@ -1,17 +1,16 @@
 #pragma once
-#ifndef _ALGO_H
+#ifndef _SORT_H
 
 namespace own {
-	template <class T>
-
-	class Algo {
-		private:
+	template <typename T>
+	class Sort {
+	public:
 			static void swap(T* n1, T* n2) {
-				T* temp = n1;
-				n1 = n2;
-				n2 = temp;
+				T temp = *n1;
+				*n1 = *n2;
+				*n2 = temp;
 			}
-			static T partition(int arr[], int start, int end) {
+			static int partition(T arr[], int start, int end) {
 				T pivot = arr[end];
 
 				int i = (start - 1);
@@ -27,21 +26,15 @@ namespace own {
 			}
 			static void qSort(T arr[], int start, int end) {
 				if (start < end) {
-					T pi = partition(arr, start, end);
+					int pi = partition(arr, start, end);
 
 					qSort(arr, start, pi - 1);
 					qSort(arr, pi + 1, end);
 				}
 			}
-		public:
-			static void Sort(T arr[], int n) {
-				qSort(arr, 0, n-1);
-				for (int i = 0; i < n; i++) {
-					std::cout << arr[i];
-				}
-
+			Sort(T arr[], int n) {
+				qSort(arr, 0, n - 1);
 			}
-			
 	};
 
 }

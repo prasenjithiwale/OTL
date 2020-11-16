@@ -151,7 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Algo.cpp" />
+    <ClCompile Include="Sort.cpp" />
     <ClCompile Include="circularlinkedlist.cpp" />
     <ClCompile Include="doublylinkedlist.cpp" />
     <ClCompile Include="linkedlist.cpp" />
@@ -160,7 +160,7 @@
     <ClCompile Include="stack.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="algo.h" />
+    <ClInclude Include="sort.h" />
     <ClInclude Include="circularlinkedlist.h" />
     <ClInclude Include="doublylinkedlist.h" />
     <ClInclude Include="linkedlist.h" />
